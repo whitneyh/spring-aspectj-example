@@ -14,8 +14,7 @@ public class TestBeanTest {
 	@Test
 	public void shouldConfigureDomainObject() {
 		TestBean bean = new TestBean();
-		bean.setValue("test");
-		Assert.assertEquals("Injected", bean.getServiceValue());
+		Assert.assertEquals("Service Value", bean.getValue());
 	}
 
 }
