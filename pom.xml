@@ -19,8 +19,11 @@
           			<version>2.12.2</version>
           			<configuration>
           				<argLine>
-          					-javaagent:/Users/hunterw/.m2/repository/org/springframework/spring-instrument/3.1.2.RELEASE/spring-instrument-3.1.2.RELEASE.jar
+          					-javaagent:src/test/resources/spring-instrument-3.1.2.RELEASE.jar
           				</argLine>
+          				<systemPropertyVariables>
+          					<java.awt.headless>true</java.awt.headless>
+          				</systemPropertyVariables>
           			</configuration>
     			</plugin>
     		</plugins>
