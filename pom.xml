@@ -9,6 +9,23 @@
     <groupId>net.whitneyhunter</groupId>
     <version>1.0</version>
     <packaging>jar</packaging>
+    
+    <build>
+    	<pluginManagement>
+    		<plugins>
+    			<plugin>
+    				<groupId>org.apache.maven.plugins</groupId>
+          			<artifactId>maven-surefire-plugin</artifactId>
+          			<version>2.12.2</version>
+          			<configuration>
+          				<argLine>
+          					-javaagent:/Users/hunterw/.m2/repository/org/springframework/spring-instrument/3.1.2.RELEASE/spring-instrument-3.1.2.RELEASE.jar
+          				</argLine>
+          			</configuration>
+    			</plugin>
+    		</plugins>
+    	</pluginManagement>
+    </build>
 
     <dependencies>
         <dependency>
